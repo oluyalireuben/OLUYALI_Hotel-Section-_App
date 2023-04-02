@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/hb"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hotel"
+        tools:targetApi="31">
+        <activity
+            android:name=".OrderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".OrderDrinks"
+            android:exported="false" />
+        <activity
+            android:name=".ViewDrinksDetails"
+            android:exported="false" />
+        <activity
+            android:name=".CartDrinksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewFoodDetails"
+            android:exported="false" />
+        <activity
+            android:name=".OrderFood"
+            android:exported="false" />
+        <activity
+            android:name=".FruitsBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderFruitsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartFruitDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrinksDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoomDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrinksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FruitsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HotelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

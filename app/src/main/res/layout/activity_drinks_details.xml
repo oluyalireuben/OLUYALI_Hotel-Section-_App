@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".DrinksDetailsActivity">
+
+    <TextView
+        android:id="@+id/titleDDName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="OLUYALI HOTEL"
+        android:textColor="@color/yellowLight"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDDTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Default Text"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleDDName" />
+
+    <ListView
+        android:id="@+id/listViewDD"
+        android:layout_width="368dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDDTitle" />
+
+    <Button
+        android:id="@+id/buttonDDBack"
+        android:layout_width="157dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_bg"
+        android:text="BACK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewDD" />
+
+    <Button
+        android:id="@+id/buttonDDGoToCart"
+        android:layout_width="157dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_bg"
+        android:text="GO TO CART"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewDD" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

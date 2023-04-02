@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ViewFoodDetails">
+
+    <TextView
+        android:id="@+id/textViewVFDName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="OLUYALI HOTEL"
+        android:textColor="@color/yellowLight"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewVFDTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Buy Food"
+        android:textColor="@color/yellowLight"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVFDName" />
+
+    <EditText
+        android:id="@+id/editTextVFDFoodName"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_dining_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Food Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVFDTitle" />
+
+    <EditText
+        android:id="@+id/editTextVFDFoodPrice"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_price_check_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Food Price"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVFDFoodName" />
+
+    <Button
+        android:id="@+id/buttonVFDAddToCart"
+        android:layout_width="148dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_bg"
+        android:text="ADD TO CART"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVFDFoodPrice" />
+
+    <Button
+        android:id="@+id/buttonVFDBack"
+        android:layout_width="148dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_bg"
+        android:text="BACK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVFDAddToCart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
